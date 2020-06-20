@@ -200,6 +200,9 @@ put:put操作采用CAS+synchronized实现并发插入或更新操作
 - 其余情况把新的Node节点按链表或红黑树的方式插入到合适的位置，这个过程采用同步内置锁实现并发（节点数>8使用红黑树）。
 
 
+![图 1](../images/85a1a9f4f6f279e8f8da8af7ae47baada7e0f35dfa8c5b7c0183d8274772f5a8.png)  
+
+
 
 get：完全并发读，不需要锁。
 
